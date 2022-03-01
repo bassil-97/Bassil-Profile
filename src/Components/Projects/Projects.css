@@ -1,0 +1,13 @@
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 30px;
+}

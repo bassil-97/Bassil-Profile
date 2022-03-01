@@ -1,0 +1,31 @@
+
+.contact {
+    min-height: 75vh;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.ci-text h4 {
+    font-size: 20px;
+}
+
+.ci-text p {
+    font-size: .85em;
+    color: #d5d5d5;
+}
+
+.contact-form input {
+    background-color: transparent;
+    border: 2px solid #444;
+    font-weight: 600;
+}
+
+.contact-form input:focus { 
+    box-shadow: none;
+    background-color: #333;
+}

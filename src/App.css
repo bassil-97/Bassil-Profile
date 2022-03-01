@@ -1,0 +1,71 @@
+:root {
+    --icons: #0962b3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+.App {
+    min-height: 100vh;
+    background-color: #222222;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.btn{
+    color: white;
+    border-radius: 30px;
+    padding: 0.8em 2.1em;
+    line-height: 1.2;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+}
+
+.btn-outline-primary {
+    border: 2px solid #0962b3;
+}
+
+.btn-outline-secondary {
+    border: 2px solid #d5d5d5;
+}
+
+.space__divider {
+    margin-top: 50px;
+}
+
+.section-title {
+    display: inline-block;
+    position: relative;
+    color: white;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+}
+
+.section-title::before {
+    display: block;
+    position: absolute;
+    content: '';
+    background-color: #353535;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+}
+
+.section-title::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 30px;
+    background-color: #007ced;
+    height: 2px;
+    bottom: 0;
+} 
+
+.section-title > h2 {
+    font-size: 28px;
+}
+
+i {
+    font-size: 33px;
+    color: var(--icons);
+}

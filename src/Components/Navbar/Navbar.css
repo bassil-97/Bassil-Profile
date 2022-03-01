@@ -1,0 +1,32 @@
+.navbar {
+    padding: 30px 16px;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 60px;
+}
+
+.nav-item {
+    text-transform: capitalize;
+}
+
+.nav-link {
+    color: gray !important;
+    transition: .5s ease-out;
+}
+
+.nav-link:hover {
+    color: white !important;
+    transition-duration: .5s;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-nav {
+        gap: 20px;
+    }
+}

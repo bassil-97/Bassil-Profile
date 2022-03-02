@@ -9,7 +9,7 @@ import SkillItem from '../Skills/SkillItem';
 export default function Resume() {
   return (
     <div className='resume'>
-        <div className='page-title'>
+        <div className='page-title' data-aos="fade-right">
             <h1>Resume</h1>
         </div>
         <div className='page-content'>

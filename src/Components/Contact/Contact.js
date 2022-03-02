@@ -6,7 +6,7 @@ import SectionTitle from '../helpers/UI/SectionTitle';
 export default function Contact() {
   return (
     <div className='contact'>
-        <div className='page-title'>
+        <div className='page-title' data-aos="fade-right">
             <h1>Contact</h1>
         </div>
         <div className='contact-content'>

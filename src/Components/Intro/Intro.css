@@ -51,7 +51,7 @@
     margin-top: 40px;
 }
 
-.resume-download-btn , .resume-download-btn:hover {
+.resume-download-btn , .resume-download-btn:hover, .contact-btn {
     color: white;
     text-decoration: none;
 }

@@ -1,3 +1,4 @@
+
 .navbar {
     padding: 30px 25px;
 }
@@ -51,12 +52,6 @@
     color: #444;
 }
 
-.floating-item span {
-    margin-top: 10px;
-    font-size: .8em;
-    font-weight: 600;
-}
-
 .floating-item i {
     color: #747474;
     font-size: 1.7em;
@@ -72,7 +67,13 @@
     transition-duration: .5s;
 }
 
+.item-title {
+    display: none;
+}
 
+.floating-item:hover > .item-title {
+    display: block;
+}
 
 @media screen and (max-width: 992px) {
     .navbar-nav, .navbar-toggler {
@@ -81,6 +82,7 @@
     }
 
     .floating-nav {
+        width: 80%;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -94,7 +96,7 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        gap: 30px;
+        gap: 10px;
     }
 }
 

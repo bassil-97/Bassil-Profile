@@ -48,12 +48,22 @@
 }
 
 .home_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-top: 40px;
 }
 
 .resume-download-btn , .resume-download-btn:hover, .contact-btn {
     color: white;
     text-decoration: none;
+}
+
+@media screen and (max-width: 1400px) {
+    .home_buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 @media screen and (max-width: 992px) {

@@ -25,12 +25,26 @@ export default function Intro() {
                     Bachelor and Master degrees focused in Computer and Information Systems from Yarmouk University.
                 </p>
                 <div className='home_buttons'>
-                    <button className='btn btn-outline-primary me-3'>
-                        <Link className='resume-download-btn' to='.../../../public/assets/Bassil-resume.pdf' target="_blank" download>Download CV</Link>
-                    </button>
                     <button className='btn btn-outline-secondary'>
                         <Link className='contact-btn' to="/contact">Contact</Link>
                     </button>
+                    <ul className='footer-social-links'>
+                        <li>
+                            <a href='https://twitter.com/Bassil_Offical' target="_blank">Twitter</a>
+                        </li>
+                        <li>
+                            <a href='https://www.facebook.com/profile.php?id=100004515360178' target="_blank">Facebook</a>
+                        </li>
+                        <li>
+                            <a href='https://www.facebook.com/profile.php?id=100004515360178' target="_blank">Instagram</a>
+                        </li>
+                        <li>
+                            <a href='https://www.linkedin.com/in/bassil-alqadi-929164195' target="_blank">Linkedin</a>
+                        </li>
+                        <li>
+                            <a href='https://github.com/bassil-97' target="_blank">GitHub</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

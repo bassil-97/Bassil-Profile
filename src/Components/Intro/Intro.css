@@ -59,6 +59,10 @@
     text-decoration: none;
 }
 
+.contact-btn:hover {
+    color: white;
+}
+
 @media screen and (max-width: 1400px) {
     .home_buttons {
         flex-direction: column;

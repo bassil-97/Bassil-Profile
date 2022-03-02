@@ -46,11 +46,11 @@ export default function Contact() {
                     <div className='col-xs-12 col-sm-6'>
                         <SectionTitle>How Can I Help You?</SectionTitle>
                         <form className='contact-form'>
-                            <div class="mb-4">
+                            <div className="mb-4">
                                 <input type="text" className="form-control" id="user_fullname" placeholder='Full Name' />
                             </div>
                             <div class="mb-4">
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Email Address' />
+                                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Email Address' />
                                 <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
                             </div>
                             <div class="mb-4">

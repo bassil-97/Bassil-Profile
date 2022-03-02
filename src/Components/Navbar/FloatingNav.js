@@ -7,16 +7,24 @@ export default function FloatingNav() {
   return (
     <div className='floating-nav'>
         <div className='floating-item'>
-            <i className="fa-solid fa-circle-info"></i>
+            <Link to="/home">
+                <i className="fa-solid fa-circle-info"></i>
+            </Link>
         </div>
         <div className='floating-item'>
-            <i className="fa-solid fa-file"></i>
+            <Link to="/resume">
+                <i className="fa-solid fa-file"></i>
+            </Link>
         </div>
         <div className='floating-item'>
-            <i className="fa-solid fa-code"></i>
+            <Link to="/portfolio">
+                <i className="fa-solid fa-code"></i>
+            </Link>
         </div>
         <div className='floating-item'>
-            <i className="fa-solid fa-address-book"></i>
+            <Link to="/contact">
+                <i className="fa-solid fa-address-book"></i>
+            </Link>
         </div>
     </div>
   )

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export default function FloatingNav() {
   return (
-    <div className='floating-nav'>
+    <div className='floating-nav' data-aos="fade-right">
         <div className='floating-item'>
             <Link to="/home" className='floating-nav-link'>
                 <i className="fa-solid fa-circle-info"></i>

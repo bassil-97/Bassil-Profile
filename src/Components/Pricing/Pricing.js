@@ -11,13 +11,13 @@ export default function Pricing() {
         </div>
         <div className='container'>
             <div className='row pricing-section'>
-                <div className='col-xs-12 col-sm-6 col-md-4'>
+                <div className='col-xs-12 col-sm-12 col-md-4'>
                     <PricingItem rank={"silver"} fee={"10"} />
                 </div>
-                <div className='col-xs-12 col-sm-6 col-md-4'>
+                <div className='col-xs-12 col-sm-12 col-md-4'>
                     <PricingItem rank={"gold"} fee={"20"} />
                 </div>
-                <div className='col-xs-12 col-sm-6 col-md-4'>
+                <div className='col-xs-12 col-sm-12 col-md-4'>
                     <PricingItem rank={"Plutinum"} fee={"30"} />
                 </div>
             </div>

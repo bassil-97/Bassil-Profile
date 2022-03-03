@@ -64,7 +64,7 @@
 
 .span-highlight::after {
     content: '';
-    height: 2px;
+    height: 3px;
     width: 100%;
     display: inline-block;
     margin-top: 0px;

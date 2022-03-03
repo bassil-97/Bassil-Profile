@@ -7,6 +7,11 @@
     font-size: 1.5em;
 }
 
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
+
 .navbar-nav {
     display: flex;
     gap: 60px;
@@ -57,8 +62,8 @@
     font-size: 1.7em;
 }
 
-.floating-item i:hover {
-    color: #0983ea;
+.item-title {
+    display: none;
 }
 
 .floating-item:hover {
@@ -67,13 +72,18 @@
     transition-duration: .5s;
 }
 
-.item-title {
-    display: none;
+.floating-item:hover > .item-title {
+    margin-top: 10px;
+    color: #0983ea;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
 }
 
-.floating-item:hover > .item-title {
-    display: block;
+.floating-item:hover > .floating-nav-link > i {
+    color: #0983ea;
 }
+
 
 @media screen and (max-width: 992px) {
     .navbar-nav, .navbar-toggler {

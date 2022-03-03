@@ -9,6 +9,7 @@ import Home from './Components/Home/Home';
 import Resume from './Components/Resume/Resume';
 import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
+import Pricing from './Components/Pricing/Pricing';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/resume' exact element={<Resume />} />
         <Route path='/portfolio' exact element={<Projects />} />
         <Route path='/contact' exact element={<Contact />} />
+        <Route path='/pricing' exact element={<Pricing />} />
       </Routes>
       <FloatingNav />
       <Footer />

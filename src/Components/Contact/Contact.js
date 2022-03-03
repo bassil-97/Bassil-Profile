@@ -49,11 +49,11 @@ export default function Contact() {
                             <div className="mb-4">
                                 <input type="text" className="form-control" id="user_fullname" placeholder='Full Name' />
                             </div>
-                            <div class="mb-4">
+                            <div className="mb-4">
                                 <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Email Address' />
                                 <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
                             </div>
-                            <div class="mb-4">
+                            <div className="mb-4">
                                 <input type="text" className="form-control" id="subject" placeholder='Subject' />
                             </div>
                             <button type="submit" className="btn btn-outline-primary">Submit</button>

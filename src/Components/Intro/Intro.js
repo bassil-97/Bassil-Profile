@@ -30,19 +30,19 @@ export default function Intro() {
                     </button>
                     <ul className='footer-social-links'>
                         <li>
-                            <a href='https://twitter.com/Bassil_Offical' target="_blank">Twitter</a>
+                            <a href='https://twitter.com/Bassil_Offical' target="_blank" rel="noreferrer">Twitter</a>
                         </li>
                         <li>
-                            <a href='https://www.facebook.com/profile.php?id=100004515360178' target="_blank">Facebook</a>
+                            <a href='https://www.facebook.com/profile.php?id=100004515360178' target="_blank" rel="noreferrer">Facebook</a>
                         </li>
                         <li>
-                            <a href='https://www.facebook.com/profile.php?id=100004515360178' target="_blank">Instagram</a>
+                            <a href='https://instagram.com/bassil_qadi' target="_blank" rel="noreferrer">Instagram</a>
                         </li>
                         <li>
-                            <a href='https://www.linkedin.com/in/bassil-alqadi-929164195' target="_blank">Linkedin</a>
+                            <a href='https://www.linkedin.com/in/bassil-alqadi-929164195' target="_blank" rel="noreferrer">Linkedin</a>
                         </li>
                         <li>
-                            <a href='https://github.com/bassil-97' target="_blank">GitHub</a>
+                            <a href='https://github.com/bassil-97' target="_blank" rel="noreferrer">GitHub</a>
                         </li>
                     </ul>
                 </div>

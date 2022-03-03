@@ -2,12 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './Navbar.css';
+import logo from '../logo.png';
 
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container-fluid">
-            <a className="navbar-brand" href="#">Bassil Al-Qadi</a>
+            <Link to="home" className="navbar-brand">
+                <img src={logo} alt="Bassil Al-Qadi" />
+            </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -26,7 +29,7 @@ export default function Navbar() {
                         <Link to="/contact" className="nav-link">contact</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">extra</a>
+                        <Link to="/pricing" className="nav-link">pricing</Link>
                     </li>
                 </ul>
             </div>

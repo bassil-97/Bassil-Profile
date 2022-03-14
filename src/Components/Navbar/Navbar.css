@@ -1,118 +1,116 @@
-
 .navbar {
-    padding: 30px 25px;
+  padding: 30px 25px;
 }
 
 .navbar-brand {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .navbar-brand img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .navbar-nav {
-    display: flex;
-    gap: 60px;
+  display: flex;
+  gap: 60px;
 }
 
 .nav-item {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .nav-link {
-    color: gray !important;
-    transition: .5s ease-out;
+  color: gray !important;
+  transition: 0.5s ease-out;
 }
 
 .nav-link:hover {
-    color: white !important;
-    transition-duration: .5s;
+  color: white !important;
+  transition-duration: 0.5s;
 }
 
 .floating-nav {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 10px;
-    margin: 0 auto;
-    display: none;
-    width: 50%;
-    padding: 10px 20px;
-    background-color: #f7f7f7;
-    border-radius: 20px;
-    z-index: 99;
-    box-shadow: 0 0 25px 0 rgb(0 0 0 / 80%);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  margin: 0 auto;
+  display: none;
+  width: 50%;
+  padding: 5px 15px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  z-index: 99;
+  box-shadow: 0 0 25px 0 rgb(0 0 0 / 80%);
 }
 
 .floating-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px;
-    border-radius: 10px;
-    transition: .5s ease-in;
-    color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s ease-in;
+  color: #444;
 }
 
 .floating-item i {
-    color: #747474;
-    font-size: 1.7em;
+  font-size: 1.1em;
+  color: #747474;
 }
 
 .item-title {
-    display: none;
+  display: none;
 }
 
 .floating-item:hover {
-    background-color: #d9e9f7;
-    cursor: pointer;
-    transition-duration: .5s;
+  background-color: #d9e9f7;
+  cursor: pointer;
+  transition-duration: 0.5s;
 }
 
 .floating-item:hover > .item-title {
-    margin-top: 10px;
-    color: #0983ea;
-    display: block;
-    font-size: 14px;
-    font-weight: 600;
+  margin-top: 10px;
+  color: #0983ea;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .floating-item:hover > .floating-nav-link > i {
-    color: #0983ea;
+  color: #0983ea;
 }
 
-
 @media screen and (max-width: 992px) {
-    .navbar-nav, .navbar-toggler {
-        display: none;
-        gap: 20px;
-    }
+  .navbar-nav,
+  .navbar-toggler {
+    display: none;
+    gap: 20px;
+  }
 
-    .floating-nav {
-        width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        gap: 20px;
-    }
+  .floating-nav {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .floating-nav {
-        width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        gap: 5px;
-    }
+  .floating-nav {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+  }
 }
 
-
 @media screen and (max-width: 576px) {
-    .floating-nav {
-        width: 90%;
-    }
+  .floating-nav {
+    width: 90%;
+  }
 }

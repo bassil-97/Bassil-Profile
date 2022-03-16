@@ -1,36 +1,64 @@
-import React from "react";
-import "./Navbar.css";
+import React, { useEffect } from "react";
+
+import "./Floating-nav.css";
 
 import { Link } from "react-router-dom";
 
 export default function FloatingNav() {
+  useEffect(() => {
+    const list = document.querySelectorAll(".list");
+    function activeLink() {
+      list.forEach((item) => item.classList.remove("active"));
+      this.classList.add("active");
+    }
+    list.forEach((item) => item.addEventListener("click", activeLink));
+  }, []);
+
   return (
-    <div className="floating-nav" data-aos="fade-right">
-      <div className="floating-item">
-        <Link to="/" className="floating-nav-link">
-          <i className="fa-solid fa-circle-info"></i>
-        </Link>
-      </div>
-      <div className="floating-item">
-        <Link to="/resume" className="floating-nav-link">
-          <i className="fa-solid fa-file"></i>
-        </Link>
-      </div>
-      <div className="floating-item">
-        <Link to="/portfolio" className="floating-nav-link">
-          <i className="fa-solid fa-code"></i>
-        </Link>
-      </div>
-      <div className="floating-item">
-        <Link to="/contact" className="floating-nav-link">
-          <i className="fa-solid fa-address-book"></i>
-        </Link>
-      </div>
-      <div className="floating-item">
-        <Link to="/pricing" className="floating-nav-link">
-          <i className="fa-solid fa-tag"></i>
-        </Link>
-      </div>
+    <div className="navigation">
+      <ul>
+        <li className="list active">
+          <Link to="/">
+            <span className="icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <span className="text">Home</span>
+          </Link>
+        </li>
+        <li className="list">
+          <Link to="/resume">
+            <span className="icon">
+              <ion-icon name="person-outline"></ion-icon>
+            </span>
+            <span className="text">Resume</span>
+          </Link>
+        </li>
+        <li className="list">
+          <Link to="/portfolio">
+            <span className="icon">
+              <ion-icon name="camera-outline"></ion-icon>
+            </span>
+            <span className="text">Portfolio</span>
+          </Link>
+        </li>
+        <li className="list">
+          <Link to="/contact">
+            <span className="icon">
+              <ion-icon name="chatbubble-outline"></ion-icon>
+            </span>
+            <span className="text">Contact</span>
+          </Link>
+        </li>
+        <li className="list">
+          <Link to="/pricing">
+            <span className="icon">
+              <ion-icon name="settings-outline"></ion-icon>
+            </span>
+            <span className="text">Pricing</span>
+          </Link>
+        </li>
+        <div className="indicator"></div>
+      </ul>
     </div>
   );
 }
